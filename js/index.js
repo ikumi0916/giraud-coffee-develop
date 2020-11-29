@@ -3,6 +3,6 @@ let afterTel;
 
     function Henkan() {
         tel = document.getElementById('tel').value;
-        afterTel = tel.replaceAll('-','');
+        afterTel = tel.replace(/[^0-9]/g,'');
         console.log(afterTel);
     }
